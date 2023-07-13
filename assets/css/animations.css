@@ -1,0 +1,191 @@
+[data-animation] {position: relative;}
+
+[data-animation="fadeInTop"],
+[data-animation="fadeInDown"],
+[data-animation="fadeIn"] {
+    opacity: 0;
+}
+
+.opacity0 {opacity: 0;}
+
+
+.adelay50:not(unfill) {animation-delay: 50ms!important}
+.adelay100:not(unfill) {animation-delay: 100ms!important}
+.adelay200:not(unfill) {animation-delay: 200ms!important}
+.adelay300:not(unfill) {animation-delay: 300ms!important}
+.adelay400:not(unfill) {animation-delay: 400ms!important}
+.adelay500:not(unfill) {animation-delay: 500ms!important}
+.adelay600:not(unfill) {animation-delay: 600ms!important}
+.adelay700:not(unfill) {animation-delay: 700ms!important}
+.adelay800:not(unfill) {animation-delay: 800ms!important}
+.adelay900:not(unfill) {animation-delay: 900ms!important}
+.adelay1000:not(unfill) {animation-delay: 1000ms!important}
+
+
+
+unfill {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 250000;
+}
+
+unfill.adelay0::after {transition-delay:0ms!important}
+unfill.adelay50::after {transition-delay: 50ms!important}
+unfill.adelay100::after {transition-delay: 100ms!important}
+unfill.adelay200::after {transition-delay: 200ms!important}
+unfill.adelay300::after {transition-delay: 300ms!important}
+unfill.adelay400::after {transition-delay: 400ms!important}
+unfill.adelay500::after {transition-delay: 500ms!important}
+unfill.adelay600::after {transition-delay: 600ms!important}
+unfill.adelay700::after {transition-delay: 700ms!important}
+unfill.adelay800::after {transition-delay: 800ms!important}
+unfill.adelay900::after {transition-delay: 900ms!important}
+unfill.adelay1000::after {transition-delay: 1000ms!important}
+
+
+unfill::after {
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0;
+   
+    transform: rotate3d(0, 8, 1, 210deg) scale(2);
+}
+
+
+unfill.unfill::after {
+    width: 0;
+    transition: .8s ease-in-out .25s;
+    opacity: 0.93;
+}
+
+
+unfill.dark::after { background: var(--dark);}
+
+
+.fadeInTop {
+	animation: fadeInTop 0.6s;
+ 	animation-fill-mode: forwards;
+}
+
+.fadeIn{
+	animation: fadeIn 1s;
+ 	animation-fill-mode: forwards;
+}
+
+.fadeOut{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+.fadeInDown{
+    animation: fadeInDown 1s;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+.scaleOut{
+    animation: scaleOut 2s;
+    animation-fill-mode: forwards;
+}
+
+.scale-up-hor {
+	-webkit-animation: scale-up-hor 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	animation: scale-up-hor 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	animation-fill-mode: forwards;
+}
+
+.scale-up-hor-full {
+    -webkit-animation: scale-up-hor_full 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: scale-up-hor_full 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation-fill-mode: forwards;
+}
+
+.scale-up-hor-full-undo {
+    -webkit-animation: scale-up-hor_full_undo 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: scale-up-hor_full_undo 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation-fill-mode: forwards;
+}
+
+
+.widthMiddleSpreadFullHeight {
+    -webkit-animation: widthMiddleSpreadFullHeight 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: widthMiddleSpreadFullHeight 0.6s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation-fill-mode: forwards;
+}
+
+
+
+
+@keyframes fadeInTop {
+    from    { opacity: 0; transform: translate3d(0px, 20px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1) }
+    to      { opacity: 1; transform: translate3d(0px, 0, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1) }
+}
+
+
+@keyframes fadeIn {
+
+    from	{ opacity: 0; transform: translate3d(0px, 6px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1) }
+    to   	{ opacity: 1; transform: translate3d(0px, 0, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1) }
+}
+
+
+@keyframes fadeInDown {
+
+    from    { opacity: 0; transform: translate3d(0px, -23px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1) }
+    to      { opacity: 1; transform: translate3d(0px, 0, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1) }
+}
+
+@keyframes fadeOut {
+
+    from      { opacity: 1; transform: translate3d(0px, 0, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1) }
+    to    { opacity: 0; transform: translate3d(0px, 56.524px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1) }
+    
+}
+
+
+@keyframes scaleOut {
+
+    from      { transform: scale(1.06); }
+    to    { transform: scale(1.0); }
+    
+}
+
+@keyframes scale-up-hor {
+    from	{ opacity: 0;  width: 0  }
+    to   	{ opacity: 1;  width: 50% }
+}
+
+
+
+@keyframes widthMiddleSpreadFullHeight {
+
+    from    { width: 0; }
+    to      { width: 100%; }
+}
+
+
+
+@keyframes scale-up-hor_full {
+    from    { opacity: 0;  width: 0  }
+    to      { opacity: 1;  width: 100% }
+}
+
+@keyframes scale-up-hor_full_undo {
+    from      { opacity: 1;  width: 100% }
+    to    { opacity: 0;  width: 0  }
+}

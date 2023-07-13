@@ -1,0 +1,290 @@
+/* BLOG */
+/* BLOG */
+/* BLOG */
+
+.blog-wrapper {
+	padding: 120px 0;
+	background: #fafafa;
+}
+
+
+.blog-wrapper .blog-hdr  {
+	text-align: center;
+}
+
+.blog-wrapper .blog-hdr p {
+	max-width: 450px;
+	margin:0 auto;
+	margin-top: 16px;
+}
+
+
+.blog-categories > span {
+	color: rgba(133,150,167,1);
+	display: block;
+	text-align: center;
+	margin-bottom: 18px;
+}
+
+.blog-categories ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 620px;
+	margin:0 auto;
+}
+
+.blog-categories ul li {
+	margin:8px 6px;
+	padding: 4px 6px;
+	transition: background 0.2s;
+	cursor: pointer;
+	border-radius: 4px;
+	background: white;
+}
+
+.blog-categories ul li a {
+	color: var(--blue);
+}
+
+.blog-categories ul li:hover {
+	background: var(--orangeOpacity);
+}
+
+.blog-categories ul li.active {
+	background: var(--orange);
+	color: white;
+	font-weight: 500;
+}
+
+.blog-categories ul li.active a {
+	color: white;
+}
+
+.blog-wrapper .posts {
+	margin-top: 80px;
+
+}
+
+
+
+
+.hp-organisations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+}
+
+.hp-organisations-grid.posts-grid {
+	grid-gap: 20px;
+}
+
+.org-grid-item {
+    color: var(--blue);
+    transition: 0.2s;
+}
+
+.org-grid-item:hover {color: var(--red)}
+
+.org-grid-item .top {
+    height: 232px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    justify-content: center;
+    position: relative;
+}
+
+.org-grid-item .top img {
+    max-width: calc(100% - 50px);
+    width: 100%;
+    object-fit: contain;
+    transition: 0.4s;
+}
+
+.org-grid-item:hover .top img {
+    transform: scale(1.07);
+    transition: 0.3s;
+}
+
+.org-grid-item p {
+    color: var(--silver);
+}
+
+
+.org-grid-item .top object {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.org-grid-item .top object a {
+    color: white;
+    background: var(--orange);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 4px 8px; 
+}
+
+
+
+.date-tags {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.date-tags tag, .date-tags date {
+    display: inline-flex;
+    background: #FAFAFB;
+    padding: 2px 8px;
+    color: var(--silver);
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    margin-right:8px;
+    margin-bottom: 8px;
+}
+
+date::before {
+    content: '';
+    background: url('/wp-content/uploads/2021/01/calendar-icon.svg') no-repeat;
+    width: 10px;
+    height: 11px;
+    margin-right: 6px;
+}
+
+
+
+.org-grid-item.post-item .top {
+	margin-bottom: 0;
+	height: 200px;
+}
+
+
+.org-grid-item.post-item .top object a {
+	border-radius: 4px;
+}
+
+.org-grid-item.post-item .top object {
+	bottom: 20px;
+	left: 20px;
+}
+
+
+
+
+.org-grid-item.post-item .top {
+	padding: 0;
+	overflow: hidden;
+}
+
+.org-grid-item.post-item .top img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	max-width: 100%;
+}
+
+
+
+.org-grid-item.post-item {
+	background: white;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+
+.org-grid-item.post-item .bottom {
+	padding: 24px 20px 40px 20px;
+}
+
+
+
+
+
+.blog-wrapper #pagination {
+	margin-top: 64px;
+}
+
+
+article .wp-block-quote, blockquote {
+    background: #f5f5f5;
+    padding: 52px 66px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    border-left: 2px solid #1c1c46;
+    padding: 32px;
+    color: var(--blue);
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+
+.single-info-post-1 ol, .single-info-post-1 ul {
+	padding-left: 0;
+	margin-top: 20px;
+}
+
+
+ 
+.single-info-post-1 ol ul , .single-info-post-1 ul ul
+.single-info-post-1 ol ol , .single-info-post-1 ul ol {
+	padding-left: 15px;
+}
+
+
+
+
+.share-socials {
+    margin-top: 120px;
+    border-top: 1px dashed #e2e2e2;
+    padding-top: 32px;
+    text-align: center;
+}
+
+.share-socials-items ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.share-socials-items ul li {
+	margin:8px 0;
+}
+
+.share-socials-items ul li img {
+    height: 17px;
+    max-width: 17px;
+}
+
+.share-socials-items ul li a {
+	width: 36px;
+    height: 36px;
+    background: #FFFFFF;
+    display: inline-block;
+    border: 1px solid #DEE4EC;
+    box-shadow: 0px 1px 2px rgba(48, 48, 89, 0.05);
+    border-radius: 4px;
+    margin-right: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.share-socials-items ul li a:hover {
+    border: 1px solid #1C1C46;
+}
+
+
+.share-socials-items .head span {
+	font-size: 22px;
+	font-weight: 500;
+}

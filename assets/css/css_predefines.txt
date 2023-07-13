@@ -1,0 +1,36 @@
+
+
+*** VARS ***
+
+--blue: #1C1C46;
+--silver: #8596A7;
+--red: #961927;
+--orange: #E97472;
+--orangeOpacity: rgba(233,116,114,0.08);
+
+
+
+*** KLASE ***
+
+margine: eg: mt8 , mb8
+8,16,18,20,24,28,40
+
+
+font size: 
+
+default: 
+font-size 16px, line height 24px
+
+
+extra klase:
+fs18 
+fw500 (font weight 500)
+
+
+
+headings: 
+h1 - 48px
+h2 - 40px
+h3 - 32px
+h4 - 24px
+

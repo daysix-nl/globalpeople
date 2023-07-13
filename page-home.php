@@ -81,14 +81,6 @@
 
 </section>
 
-<section>
-	<div class="container">
-		<div class="test">
-			<h3>Dit is een test</h3>
-		</div>
-	</div>
-</section>
-
 
 <section class="met-features">
 

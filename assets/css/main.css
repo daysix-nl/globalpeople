@@ -13,11 +13,7 @@
 */
 
 
-.test {
-    background: red;
-    padding: 60px;
-    margin: 40px;
-}
+
 
 .grecaptcha-badge {
     visibility: hidden;

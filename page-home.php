@@ -35,6 +35,13 @@
 
 </section>
 
+<section>
+	<div class="container">
+		<div class="test">
+			<h3>Dit is een test</h3>
+		</div>
+	</div>
+</section>
 
 <section class="floating-ad" data-animation="fadeInDown">
 	<div class="container">

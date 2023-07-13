@@ -205,6 +205,10 @@
     .single-magazine  .partner-werk-content p {
          word-break: break-word
     }
+
+    .single-magazine  .photonic-stream {
+        max-width: 600px !important;
+    }
    
 
  </style>

@@ -11,8 +11,8 @@
         // require_once 'mollie-api-php/examples/functions.php';
 
         $mollie = new \Mollie\Api\MollieApiClient();
-        $mollie->setApiKey('live_hgAT2x4Ak6Me98NqS9fWEEk9tHnhJr');
-        // $mollie->setApiKey('test_JcWqk3QUCxUCdHnRrpFcn9cQmCAwhd');
+        // $mollie->setApiKey('live_hgAT2x4Ak6Me98NqS9fWEEk9tHnhJr');
+        $mollie->setApiKey('test_JcWqk3QUCxUCdHnRrpFcn9cQmCAwhd');
 
         $payment = $mollie->payments->create(
         [

@@ -4,8 +4,11 @@
     {
         global $post;
 
-        require_once 'mollie-api-php/vendor/autoload.php';
-        require_once 'mollie-api-php/examples/functions.php';
+
+        require_once _DIR_ . "/../../vendor/autoload.php";
+        require_once _DIR_ . '/../../vendor/mollie/mollie-api-php/examples/functions.php'
+        // require_once 'mollie-api-php/vendor/autoload.php';
+        // require_once 'mollie-api-php/examples/functions.php';
 
         $mollie = new \Mollie\Api\MollieApiClient();
         $mollie->setApiKey('live_hgAT2x4Ak6Me98NqS9fWEEk9tHnhJr');

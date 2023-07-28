@@ -1,0 +1,43 @@
+{
+    "name": "eloquent/pops",
+    "description": "PHP object proxy system.",
+    "keywords": ["object", "proxy", "method", "property"],
+    "homepage": "https://github.com/eloquent/pops",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Erin Millard",
+            "email": "ezzatron@gmail.com",
+            "homepage": "http://ezzatron.com/"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8"
+    },
+    "require-dev": {
+        "eloquent/code-style": "^2",
+        "errors/exceptions": "^0.2",
+        "friendsofphp/php-cs-fixer": "^3",
+        "phpunit/phpunit": "^9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eloquent\\Pops\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Eloquent\\Pops\\": ["test/src"],
+            "OutputEscaper\\": ["test/src/OutputEscaper"]
+        },
+        "files": [
+            "test/src/Confusion.php",
+            "test/src/UppercaseProxyObject.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "4.1.x-dev"
+        }
+    }
+}

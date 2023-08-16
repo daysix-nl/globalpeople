@@ -836,6 +836,13 @@ if (have_rows('ticket')): ?>
                   </div>
                 <?php } ?>
 
+                <?php if (in_array("Dieetwensen", $requiredFields)) { ?>
+                  <div class="input" value="Dieetwensen">
+                    <label> Diëet wensen? </label>
+                    <input autocomplete="off" class="inputValue" name="dieetwensen[]" type="text" placeholder="">
+                  </div>
+                <?php } ?>
+
                 <?php if (in_array("Opleidingsniveau", $requiredFields)) { ?>
                   <div class="input" value="Opleidingsniveau">
                     <label> Opleidingsniveau </label>

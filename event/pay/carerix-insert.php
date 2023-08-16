@@ -95,7 +95,7 @@ if($price <= 0) {
         $campaign->setToDoUsers($toDoUser);
         $campaign->save();
 
-        $text = '[' . $candidate->voornaam . ' ' . $candidate->achternaam . ' - Email: ' . $candidate->email . ' - Price/Type: ' . $candidate->type . ' - €' . $candidate->price . ' - Opleidingsniveau: ' . $candidate->opleidingsniveau . ' - Opleiding: ' . $candidate->opleiding . ' - Werkvelden: ' . $candidate->werkvelden . ' - Studentenvereniging: ' . $candidate->studentenvereniging . ' - Gevonden: ' . $candidate->gevonden . ' - Functie: ' . $candidate->functie . ' - CV: https://globalpeople.nl/' . $candidate->cv . ']';
+        $text = '[' . $candidate->voornaam . ' ' . $candidate->achternaam . ' - Email: ' . $candidate->email . ' - Price/Type: ' . $candidate->type . ' - €' . $candidate->price . ' - Opleidingsniveau: ' . $candidate->opleidingsniveau . ' - Dieetwensen: ' . $candidate->dieetwensen . ' - Opleiding: ' . $candidate->opleiding . ' - Werkvelden: ' . $candidate->werkvelden . ' - Studentenvereniging: ' . $candidate->studentenvereniging . ' - Gevonden: ' . $candidate->gevonden . ' - Functie: ' . $candidate->functie . ' - CV: https://globalpeople.nl/' . $candidate->cv . ']';
 
         $email['event'] = $candidate->event;
         $email['price'] = $email['price'] + $candidate->price;

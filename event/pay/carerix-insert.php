@@ -43,6 +43,12 @@ if($price <= 0) {
             $user->setPrivacyApprovalDate(date('Y-m-d 12:00:00', time()));
         }
 
+        if ($candidate->dieetwensen) {
+            //create array for additional info
+            $AdditionalInfo = array('dieet' => $candidate->dieetwensen );
+            $user->setAdditionalInfo($AdditionalInfo);
+        }
+
         if ($candidate->opleidingsniveau) {
             $node = CRDataNode::find($candidate->opleidingsniveau);
             $education = new CREmployeeEducation();

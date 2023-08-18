@@ -43,11 +43,11 @@ if($price <= 0) {
             $user->setPrivacyApprovalDate(date('Y-m-d 12:00:00', time()));
         }
 
-        // if ($candidate->dieetwensen) {
-        //     $dieetId = 10444;
-        //     $additionalInfoPartial = array($dieetId => $candidate->dieetwensen );
-        //     $user->setAdditionalInfoPartial($additionalInfoPartial);
-        // }
+        if ($candidate->dieetwensen) {
+            $dieetId = 10444;
+            $additionalInfoPartial = array($dieetId => $candidate->dieetwensen );
+            $user->setAdditionalInfoPartial($additionalInfoPartial);
+        }
 
         if ($candidate->opleidingsniveau) {
             $node = CRDataNode::find($candidate->opleidingsniveau);

@@ -44,9 +44,9 @@ if($price <= 0) {
         }
 
         if ($candidate->dieetwensen) {
-            //create array for additional info
-            $AdditionalInfo = array('dieet' => $candidate->dieetwensen );
-            $user->setAdditionalInfo($AdditionalInfo);
+            $dieetId = 10444;
+            $additionalInfoPartial = array($dieetId => $candidate->dieetwensen );
+            $user->setAdditionalInfoPartial($additionalInfoPartial);
         }
 
         if ($candidate->opleidingsniveau) {

@@ -42,7 +42,7 @@
 	       
 	    ));
 
-       set_transient('posts_transient_magazineeee', $loop, DAY_IN_SECONDS );
+       // set_transient('posts_transient_magazineeee', $loop, DAY_IN_SECONDS );
     }
 
 

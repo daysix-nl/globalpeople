@@ -177,7 +177,7 @@
                             <div class="right">
                                 <a href="<?php the_permalink()?>">  <h3 class="title"> <?php the_title()?>  </h3> </a>
                                 <p class="description limitRows4">  <?=get_the_excerpt() ?> </p>
-                                <a href="<?php the_permalink()?>" class="textLink orange"> Lees meer over dit even <arrow>➝</arrow> </a>
+                                <a href="<?php the_permalink()?>" class="textLink orange"> Lees meer over dit event <arrow>➝</arrow> </a>
                             </div>
                         </div>
                     </div>
